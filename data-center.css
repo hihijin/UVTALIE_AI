@@ -1,0 +1,51 @@
+.point-south-korea {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: calc(100% / 1.185 - 7.5px);
+    top: calc(100% / 3.28 - 7.5px);
+}
+
+.map-circle-wrapper {
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+.map-circle {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: #00ffff;
+    border-radius: 999px;
+    animation: map-circle-animation 0.8s infinite;
+}
+
+.map-label {
+    margin-left: 7px;
+    padding: 3px 5px 3px 5px;
+    color: black;
+    background-color: white;
+    font-size: 12px;
+    border-radius: 999px;
+}
+  
+@keyframes map-circle-animation {
+    from {
+        background-color: rgba(0, 255, 255, 1);
+        width: 15px;
+        height: 15px;
+        left: 0px;
+        top: 0px;
+    }
+
+    to {
+        background-color: rgba(0, 255, 255, 0);
+        width: 25px;
+        height: 25px;
+        left: -5px;
+        top: -5px;
+    }
+}
