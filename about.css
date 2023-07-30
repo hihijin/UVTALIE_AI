@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR:wght@700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: "Junegull";
+    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.about-title{
+    color: white;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    font-size: 40px;
+}
+.developer-img{
+    width: 100vw;
+    margin-bottom: 50px;
+}
+.arrow {
+    border-top: 2px solid rgba(255,255,255,0.5);
+    border-left: 2px solid rgba(255,255,255,0.5);
+    position: absolute;
+    top: 600px;
+    padding: 15px;
+    animation: slide infinite 1.5s linear;
+    transform: rotate(223deg);
+}
+@keyframes slide {
+    from {
+        transform: translateY(0px) rotate(223deg);
+    }
+    50% {
+        transform: translateY(15px) rotate(223deg);
+    }
+    to {
+        transform: translateY(0px) rotate(223deg);
+    }
+}
+
+
+
+.about-title2 {
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 35px;
+    padding-left: 50px;
+    margin-bottom: 70px;
+}
+
+.about2-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.about2-content > div:first-child {
+    background: white;
+    color: #000022;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.about2-content > div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.arrow2 {
+    width: 150px;
+}
+.about2-content > div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+}
+.about2-content > div:nth-child(3) > span {
+    margin: 50px 0;
+    background: white;
+    color: #000022;
+    font-size: 18px;
+    font-weight: bold;
+    width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 30px;
+    height: 100px;
+}
+.about2-content > div:nth-child(4){
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+}
+button {
+    border-radius: 20px;
+    border: 3px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    padding: 13px 23px;
+}
+.about2-content > div:last-child {
+    background: white;
+    color: #000022;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.team-mission{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0;
+}
+.mission{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 150px;
+    border-radius: 30px;
+    padding: 50px;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 150%;
+    text-align: center;
+    margin: 100px 0;
+}
+.mission > div:first-child{
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.history{
+    width: 80%;
+}
+.history-img{
+    width: 1000px;
+    margin: 100px 0;
+}
