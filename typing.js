@@ -39,28 +39,4 @@ window.onload = () => {
   typingAnimation();
 };
 
-const answerInput = document.getElementById("answerInput");
-const submitButton = document.getElementById("box-i");
-
-answerInput.addEventListener("keyup", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    submitAnswer(answerInput.value);
-  }
-});
-
-submitButton.addEventListener("click", function (e) {
-  submitAnswer(answerInput.value);
-  console.log(e);
-});
-
-function submitAnswer(answer) {
-  // 답변 처리 및 원하는 동작을 수행하는 로직을 구현합니다.
-  console.log("입력된 답변:", answer);
-  // 답변 처리 후 추가적인 작업을 수행할 수 있습니다.
-  // 예를 들어, 서버에 답변을 전송하는 등의 작업을 수행할 수 있습니다.
-  // 여기서는 단순히 콘솔에 입력된 답변을 출력합니다.
-  // 원하는 동작으로 대체하여 사용하시면 됩니다.
-}
-
-var reply = confirm("정말  새로고침 하시겠습니까?");
+//var reply = confirm("정말  새로고침 하시겠습니까?");
