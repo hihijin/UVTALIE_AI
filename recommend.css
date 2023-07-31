@@ -1,0 +1,179 @@
+body {
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.content{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.festival {
+    position: absolute;
+    top: 90px;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    color: white;
+    width: 1000px;
+    text-align: left;
+}
+.album {
+    color: white;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1.5px solid white;
+}
+.title > div {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width:100%;
+}
+.title > span {
+    width: 70px;
+}
+ul {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    width:100%;
+    overflow-y: scroll;
+}
+li{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 0.1px solid rgba(255,255,255,0.3);
+}
+li > span {
+    text-align: center;
+    width: 100%;
+}
+li > img {
+    width: 40px;
+    padding: 0 64px;
+}
+/*중간버전
+.history{
+    color: white;
+    width: 300px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 101;
+    height: 100vw;
+}
+끝버전*/
+.history{
+    color: white;
+    width: 300px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 101;
+    height: 100vw;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.history>div{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: rgba(255,255,255,0.5);
+    padding: 10px 5px;
+}
+.history>div:hover{
+    background: linear-gradient(to right, #b681c1, #6278cd);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.history>div:focus{
+    color: white;
+}
+.history> h1{
+    font-size: 18px;
+    width:100%;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+button {
+    background: none;
+    color: rgba(255,255,255,0.5);
+    border: none;
+    font-size: 30px;
+    padding: 10px 0 0 10px;
+    cursor: pointer;
+}
+button:hover {
+    color: white;
+}
+.rythme{
+    padding-right: 5px;
+    width: 20px;
+}
+.history-logo{
+    position: absolute;
+    right: 30px;
+    top:110px;
+    width: 40px;
+    background-color: #000021;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.3);
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.history-logo:hover{
+    box-shadow: 0px 0px 10px 3px rgba(255,255,255,0.5);
+    padding: 10px;
+    width: 45px;
+}
+.logoAnimation {
+    animation: scaleLogo 2s ease-in-out infinite;
+}
+@keyframes scaleLogo {
+    from {
+        box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.3);
+        width: 40px;
+    }
+    50%{
+        box-shadow: 0px 0px 10px 3px rgba(255,255,255,0.5);
+    width: 45px;
+    }
+    to{
+        box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.3);
+        width: 40px;
+    }
+}
+.hide {
+    display: none;
+}

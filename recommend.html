@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="" content="width=device-width, initial-scale=1.0">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <title>모든 음악의 중심, UVMUSIC AI</title>
+    <link rel="stylesheet" href="data-center.css">
+    <link rel="icon" href="./UVATALIElogo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/junegull" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="recommend.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header">
+                <div class="logo-box">
+                    <img src="./images/UVATALIElogo.png" class="logo" onclick="location.href='/'">
+                </div>
+                <div class="menu-box">
+                    <div class="menu">
+                        <div class="menu-item" onclick="location.href= './'">Home</div>
+                        <div class="menu-item" onclick="location.href= './about.html'">About</div>
+                        <div class="menu-item" onclick="location.href= './service.html'">Services</div>
+                        <div class="menu-item" onclick="location.href= './contact.html'">Contact</div>
+                    </div>
+                </div>
+                <div class="login-box">
+                    <div class="signup-button" onclick="location.href= 'http://192.168.25.10:7373/'">콘솔 바로가기</div>
+                    <div class="login-button" onclick="location.href= './loginpage/index.html'"> Login </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <img src="./images/festival2.png" class="festival">
+    <section class="main">
+    <section class="content">
+        <h1>AI 추천음악</h1>
+        <section class="list">
+            <div class="title">
+            <div>Album</div>
+            <div>Song</div>
+            <div>Singer</div>
+            <div>Play</div>
+            <div>View</div>
+            <div>Like</div>
+            <span></span>
+        </div>
+        <ul>
+        <li>
+            <span><img src="./images/album.png" class="album-img"></span>
+            <span>ETA</span>
+            <span>NewJeans</span>
+            <span><img src="./images/play.png" class="play"></span>
+            <span>1000000만회</span>
+            <span><img src="./images/like.png" class="like"></span>
+        </li>
+        <li>
+            <span><img src="./images/album.png" class="album-img"></span>
+            <span>Super Shy</span>
+            <span>NewJeans</span>
+            <span><img src="./images/pause.png" class="pause"></span>
+            <span>1000000만회</span>
+            <span><img src="./images/unlike.png" class="unlike"></span>
+        </li>
+        </ul>
+        </section>
+    </section>
+    <img src="./images/UVATALIElogo.png" class="history-logo logoAnimation">
+    <section class="history hide">
+        <button class="closeBtn">&times</button>
+    <h1>UVMUSIC AI History</h1>
+    <div><img src="./images/rythme.png" class="rythme">ddddddddddddddddddddddd신나는 영상 분위기에 맞는 음악</div>
+    <div><img src="./images/rythme.png" class="rythme">아련한 영상 분위기에 맞는 음악</div>
+    </section>
+</section>
+</body>
+<script src="recommend.js"></script>
+</html>
